@@ -1,0 +1,24 @@
+#social{
+	width:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+#social a{
+	margin:10px 10px;
+}
+#social svg{
+	width:40px;
+	height:40px;
+	fill:white;
+}
+
+#social svg:hover{
+	cursor: pointer;
+	fill:#E90046;
+}

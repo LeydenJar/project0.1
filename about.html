@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SkullWell</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+
+    <script src="https://use.fontawesome.com/0b9000adbc.js"></script>
+    <link rel="stylesheet" href="static/lightbox/css/blueimp-gallery.min.css" />
+
+    <link rel="stylesheet" href="static/dist/main.css">
+
+    <link rel="icon" type="image/x-icon" href="media/favicon/favicon.ico" />
+
+    
+
+
+</head>
+
+<body id='start' class=''>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">SkullWell</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" id='gal'>Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listen.html" id='age'>Listen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" id='vid'>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" id='con'>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="page-section" id="sobre">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <h2 class="pt mt-0 titulo">Sou Skullwell</h2>
+
+                    <hr class="divider dark my-4">
+
+                    <p class="mb-4 pt">Skullwell, de apenas 21 anos de idade, integra o time de artistas brasileiros que
+                        ecoam sua música além do território nacional. Sua versão de My My MY com o duo italiano de House
+                        Progressivo Promise Land foi escolhida por Don Diablo, o maior DJ de Future House do mundo, para
+                        ser lançada por sua gravadora, em outubro deste ano. Skullwell foi o primeiro artista brasileiro
+                        a assinar com a gigante Hexagon Records.
+
+                        Suportes massivos do próprio Don Diablo, que trabalha forte na divulgação da track em suas redes
+                        sociais e nos sets pelo mundo - sem poupar elogios ao brasileiro - coroam o momento de
+                        Skullwell. Chamou o garoto de “talentoso”, mostrando que a track é uma das grandes apostas de
+                        sua gravadora.
+
+                        Com cinco dias de lançamento, a track chegou ao Top 2 da categoria Future House do Beatport, o
+                        maior site de comércio de música eletrônica do mundo. Na 1001tracklists, um verdadeiro radar do
+                        que os grandes DJs ouvem e tocam em seus sets pelo mundo, a track alcançou o topo da categoria
+                        ‘Novidades’ da semana. E as atualizações de status continuam.</p>
+                    
+                    <p class="d-none pt" id="texto_mais">A imprensa especializada do Brasil noticiou tudo isso em peso e
+                        Skullwell fortalece a fase de ataque no trabalho de expansão de sua carreira, que iniciou já há
+                        algum tempo. Ele mira o mercado europeu e norte-americano, transmutando seu som para o que se
+                        encaixa no gosto brasileiro e conversa com as pistas internacionais. E o mercado responde à
+                        altura: o verão 2020 de Skullwell vem com datas ao lado de Alok e Nervo no P12, em Jurerê
+                        Internacional, e no Universo Paralello, na Bahia.
+                        Sua história
+                        Pedro é jovem e respira música eletrônica desde os 11 anos de idade. Profissionalmente, ele se
+                        apresenta desde os 15 anos, quando assumiu a residência do Sky Room, em Ribeirão Preto/SP, club
+                        que já figurou entre os melhores do mundo pelo ranking da DJ Mag. O projeto Skullwell define e a
+                        máscara complementa um personagem que traz consigo uma mensagem de renovação e sabedoria (Pedro
+                        gosta de significar tudo o que faz). O projeto já tem quatro anos e levou Pedro a realizar
+                        apresentações enérgicas pelos maiores palcos do Brasil – Green Valley, P12, El Fortin, Park Art
+                        e festivais como XXXperience, Federal Music e Magic Island, para citar alguns, e a lançar suas
+                        produções por gravadoras como Hexagon Records, Sony Music e Bunny Tiger.</p>
+
+
+                    <button id="ler_mais" class="btn pt btn-light btn-xl">Ler mais!</button>
+                    <button id="ler_menos" class="d-none pt btn btn-light btn-xl">Ler menos</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = { index: link, event: event },
+                links = this.getElementsByTagName('a')
+            blueimp.Gallery(links, options)
+        }
+    </script>

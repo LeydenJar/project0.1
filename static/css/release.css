@@ -1,0 +1,75 @@
+body {
+    background: #222;
+    color: #AAA; }
+
+.imagem_musica{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /* box-shadow: 3px 2px 13px 3px rgb(170, 170, 170); */
+}
+
+.links{
+    position: absolute;
+    bottom: 56px;
+    /* background: radial-gradient(rgba(202, 202, 202, 0.438), rgba(170, 170, 170, 0.034)); */
+    /* box-shadow: 3px 2px 4px 1px rgba(170, 170, 170, 0.2); */
+    padding: 30px;
+    padding-left: 0;
+}
+
+.links a{
+    color:rgb(95, 95, 95);
+    font-weight: bold;
+}
+.links a:hover{
+    text-decoration: none;
+}
+
+.links img{
+    height: 30px;
+    max-width: 50px;
+}
+.sw{
+    display:flex;
+    margin: 3px 0px;
+    transform: scale(1.2, 1.2);
+}
+
+.cont{
+    position:absolute;
+    bottom: 40%;
+    transform: translateY(50%);
+    background: radial-gradient(rgba(202, 202, 202, 0.438), rgba(170, 170, 170, 0.034));
+    padding:30px 0px;
+    width: 100%;
+}
+
+nav{
+    background-color: #343a40;
+}
+
+.titulo{
+    font-weight: 600;
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .links{
+        top:90px;
+    }
+}
+@media screen and (max-width:768px){
+    .links{
+        position:relative;
+        top:10px;
+    }
+
+    .links a{
+        padding:10px 10px;
+    }
+
+    .ct{
+        text-align:center;
+        margin-top:15px;
+    }
+}
+

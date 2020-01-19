@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SkullWell</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+
+    <script src="https://use.fontawesome.com/0b9000adbc.js"></script>
+    <link rel="stylesheet" href="static/lightbox/css/blueimp-gallery.min.css" />
+
+    <link rel="stylesheet" href="static/dist/main.css">
+
+    <link rel="icon" type="image/x-icon" href="media/favicon/favicon.ico" />
+</head>
+
+<body id='start' class=''>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">SkullWell</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" id='gal'>Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listen.html" id='age'>Listen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" id='vid'>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" id='con'>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Listen Section -->
+    <section class="page-section" id="Listen">
+        <h2 class="text-center mt-0 px-4 titulo">Listen</h2>
+        <hr class="divider my-4">
+
+        <div class="row" id="row_listens">
+            <div class="col-12 col-lg-6">
+                <div class="row justify-content-center" id="row_embeds">
+                    <div class="wrapembed col-11 col-md-6 pl-sm-3 pl-md-0 col-lg-10">
+                        <div class="titdiv">
+                            <h5 class="titulo my-2">Spotify</h5>
+                        </div>
+
+                        <div class="text-center embed">
+                            <div class="embedd">
+                                <iframe src="https://open.spotify.com/embed/artist/4kH9eosSaSUo0DNcmAMlFA" width="300"
+                                    height="380" frameborder="0" allowtransparency="true"
+                                    allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapembed col-11 col-md-6 pl-sm-3 pl-md-0 col-lg-10">
+                        <div class="titdiv">
+                            <h5 class="titulo my-2">Soundcloud</h5>
+                        </div>
+                        <div class="text-center embed">
+                            <div class="embedd">
+                                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/731007979&amp;color=%23544c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-lg-6" id="releases_wrapper">
+                <div class="titdiv">
+                    <h5 class="titulo my-2">Releases</h5>
+                </div>
+
+
+                <div class="row px-4 py-0" id="row_releases">
+                    <div class="release_div">
+                        <div class="imgdiv">
+                            <img class="imagem_release" src="media/releases/Belmicro.png">
+                            <button title="Play" class="rb play"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Play</title>
+                                    <path
+                                        d="M7.712 22.04a.732.732 0 0 1-.806.007.767.767 0 0 1-.406-.703V4.656c0-.31.135-.544.406-.703.271-.16.54-.157.806.006l14.458 8.332c.266.163.4.4.4.709 0 .31-.134.546-.4.71L7.712 22.04z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></button>
+                            <button title="Pause" class="d-none rb pause"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Pause</title>
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="5" y="3" width="5" height="20" rx="1"></rect>
+                                        <rect x="16" y="3" width="5" height="20" rx="1"></rect>
+                                    </g>
+                                </svg></button>
+                        </div>
+                        <div class="text_div w-100">
+                            <h7 class="w-100 nome_release">Novo Release</h7>
+                            <p class="w-100">Skullwell</p>
+                        </div>
+                        <audio src="media/releases/A_Liga_Skullwell_-_Like_An_Animal_fg0wk80.mp3" class="audio"></audio>
+                    </div>
+
+                    <div class="release_div">
+                        <div class="imgdiv">
+                            <img class="imagem_release" src="media/background/Logo.svg">
+                            <button title="Play" class="rb play"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Play</title>
+                                    <path
+                                        d="M7.712 22.04a.732.732 0 0 1-.806.007.767.767 0 0 1-.406-.703V4.656c0-.31.135-.544.406-.703.271-.16.54-.157.806.006l14.458 8.332c.266.163.4.4.4.709 0 .31-.134.546-.4.71L7.712 22.04z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></button>
+                            <button title="Pause" class="d-none rb pause"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Pause</title>
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="5" y="3" width="5" height="20" rx="1"></rect>
+                                        <rect x="16" y="3" width="5" height="20" rx="1"></rect>
+                                    </g>
+                                </svg></button>
+                        </div>
+                        <div class="text_div w-100">
+                            <h7 class="w-100 nome_release">Rode</h7>
+                            <p class="w-100">Skullwell</p>
+                        </div>
+
+                        <audio src="media/releases/A_Liga_Skullwell_-_Like_An_Animal_fg0wk80.mp3" class="audio"></audio>
+                    </div>
+
+                    <div class="release_div">
+                        <div class="imgdiv">
+                            <img class="imagem_release" src="media/background/Logo.svg">
+                            <button title="Play" class="rb play"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Play</title>
+                                    <path
+                                        d="M7.712 22.04a.732.732 0 0 1-.806.007.767.767 0 0 1-.406-.703V4.656c0-.31.135-.544.406-.703.271-.16.54-.157.806.006l14.458 8.332c.266.163.4.4.4.709 0 .31-.134.546-.4.71L7.712 22.04z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></button>
+                            <button title="Pause" class="d-none rb pause"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Pause</title>
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="5" y="3" width="5" height="20" rx="1"></rect>
+                                        <rect x="16" y="3" width="5" height="20" rx="1"></rect>
+                                    </g>
+                                </svg></button>
+                        </div>
+                        <div class="text_div w-100">
+                            <h7 class="w-100 nome_release">Gilberto</h7>
+                            <p class="w-100">Skullwell</p>
+                        </div>
+
+                        <audio src="media/releases/Skullwell_Feriz_-_Dust_Official_Music_Video_ckNJ4d6.mp3"
+                            class="audio"></audio>
+                    </div>
+
+
+
+                    <div class="release_div">
+                        <div class="imgdiv">
+                            <img class="imagem_release" src="media/background/Logo.svg">
+                            <button title="Play" class="rb play"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Play</title>
+                                    <path
+                                        d="M7.712 22.04a.732.732 0 0 1-.806.007.767.767 0 0 1-.406-.703V4.656c0-.31.135-.544.406-.703.271-.16.54-.157.806.006l14.458 8.332c.266.163.4.4.4.709 0 .31-.134.546-.4.71L7.712 22.04z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></button>
+                            <button title="Pause" class="d-none rb pause"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Pause</title>
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="5" y="3" width="5" height="20" rx="1"></rect>
+                                        <rect x="16" y="3" width="5" height="20" rx="1"></rect>
+                                    </g>
+                                </svg></button>
+                        </div>
+                        <div class="text_div w-100">
+                            <h7 class="w-100 nome_release">Magic Isla</h7>
+                            <p class="w-100">Skullwell</p>
+                        </div>
+
+                        <audio src="media/releases/Skullwell__Avila_-_What_is_Love_QbJGsbe.mp3" class="audio"></audio>
+                    </div>
+
+
+
+                    <div class="release_div">
+                        <div class="imgdiv">
+                            <img class="imagem_release" src="media/background/Logo.svg">
+                            <button title="Play" class="rb play"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Play</title>
+                                    <path
+                                        d="M7.712 22.04a.732.732 0 0 1-.806.007.767.767 0 0 1-.406-.703V4.656c0-.31.135-.544.406-.703.271-.16.54-.157.806.006l14.458 8.332c.266.163.4.4.4.709 0 .31-.134.546-.4.71L7.712 22.04z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></button>
+                            <button title="Pause" class="d-none rb pause"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Pause</title>
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="5" y="3" width="5" height="20" rx="1"></rect>
+                                        <rect x="16" y="3" width="5" height="20" rx="1"></rect>
+                                    </g>
+                                </svg></button>
+                        </div>
+                        <div class="text_div w-100">
+                            <h7 class="w-100 nome_release">Like a Stone</h7>
+                            <p class="w-100">Skullwell</p>
+                        </div>
+                        <audio src="media/releases/A_Liga_Skullwell_-_Like_An_Animal_znmP3Pj.mp3" class="audio"></audio>
+                    </div>
+                    <div class="release_div">
+                        <div class="imgdiv">
+                            <img class="imagem_release" src="media/background/Logo.svg">
+                            <button title="Play" class="rb play"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Play</title>
+                                    <path
+                                        d="M7.712 22.04a.732.732 0 0 1-.806.007.767.767 0 0 1-.406-.703V4.656c0-.31.135-.544.406-.703.271-.16.54-.157.806.006l14.458 8.332c.266.163.4.4.4.709 0 .31-.134.546-.4.71L7.712 22.04z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg></button>
+                            <button title="Pause" class="d-none rb pause"><svg viewBox="0 0 26 26"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; color: white;">
+                                    <title>Pause</title>
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="5" y="3" width="5" height="20" rx="1"></rect>
+                                        <rect x="16" y="3" width="5" height="20" rx="1"></rect>
+                                    </g>
+                                </svg></button>
+                        </div>
+                        <div class="text_div w-100">
+                            <h7 class="w-100 nome_release">Like an Animal</h7>
+                            <p class="w-100">Skullwell, A Liga</p>
+                        </div>
+                        <audio src="media/releases/A_Liga_Skullwell_-_Like_An_Animal_BCSAczl.mp3" class="audio"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="static/lightbox/js/blueimp-gallery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+
+</body>
+
+</html>
